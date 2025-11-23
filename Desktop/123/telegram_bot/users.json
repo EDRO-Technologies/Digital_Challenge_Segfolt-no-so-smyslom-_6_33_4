@@ -1,0 +1,19 @@
+{
+  "5542965541": {
+    "login": "ttt",
+    "password": "tttt",
+    "direction": "Магистратура_Программная_инженерия",
+    "course": "1 курс",
+    "registered_at": "2025-11-23T05:32:54.156380",
+    "last_login": "2025-11-23T05:33:48.358720",
+    "logged_in": false
+  },
+  "5244049580": {
+    "login": "123",
+    "password": "1234",
+    "direction": "ИСиТ",
+    "course": "3 курс",
+    "registered_at": "2025-11-23T05:50:52.833790",
+    "logged_in": true
+  }
+}
