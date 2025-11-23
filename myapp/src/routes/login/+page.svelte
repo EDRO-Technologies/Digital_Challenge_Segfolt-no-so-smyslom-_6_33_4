@@ -12,24 +12,24 @@
     event.preventDefault();
     isLoading = true;
     error = "";
+    goto("/calendar");
+    // try {
+    //   const result = await authApi.login(email, password);
 
-    try {
-      const result = await authApi.login(email, password);
+    //   if (result.success) {
+    //     user.set(result.user);
+    //     isAuthenticated.set(true);
 
-      if (result.success) {
-        user.set(result.user);
-        isAuthenticated.set(true);
+    //     // Загружаем данные с бэкенда
+    //     setTimeout(() => {
 
-        // Загружаем данные с бэкенда
-        setTimeout(() => {
-          goto("/calendar");
-        }, 100);
-      }
-    } catch (err) {
-      error = err instanceof Error ? err.message : "Ошибка авторизации";
-    } finally {
-      isLoading = false;
-    }
+    //     }, 100);
+    //   }
+    // } catch (err) {
+    //   error = err instanceof Error ? err.message : "Ошибка авторизации";
+    // } finally {
+    //   isLoading = false;
+    // }
   }
 </script>
 
